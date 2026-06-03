@@ -1,51 +1,27 @@
-document.getElementById("pageTitle").textContent =
-SITE_DATA.title;
+const heroImages = [
 
-document.getElementById("companyName").textContent =
-SITE_DATA.companyName;
+    "images/hero1.jpg",
+    "images/hero2.jpg",
+    "images/hero3.jpg",
+    "images/hero4.jpg"
 
-document.getElementById("president").textContent =
-SITE_DATA.president;
+];
 
-document.getElementById("heroTitle").innerHTML =
-SITE_DATA.heroTitle;
+const randomImage =
+heroImages[
+    Math.floor(
+        Math.random() *
+        heroImages.length
+    )
+];
 
-document.getElementById("heroText").innerHTML =
-SITE_DATA.heroText;
+document.querySelector(".hero")
+.style.backgroundImage =
 
-document.getElementById("aboutTitle").innerHTML =
-SITE_DATA.aboutTitle;
-
-document.getElementById("aboutText").innerHTML =
-SITE_DATA.aboutText;
-
-document.getElementById("contactText").innerHTML =
-SITE_DATA.contactText;
-
-document.getElementById("footerCompany").textContent =
-SITE_DATA.companyName;
-
-const cards =
-document.getElementById("serviceCards");
-
-SITE_DATA.services.forEach(service => {
-
-    cards.innerHTML += `
-        <div class="card">
-
-            <div class="icon">
-                ${service.icon}
-            </div>
-
-            <h3>
-                ${service.title}
-            </h3>
-
-            <p>
-                ${service.text}
-            </p>
-
-        </div>
-    `;
-
-});
+`
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.75)
+),
+url('${randomImage}')
+`;
