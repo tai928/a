@@ -1,5 +1,93 @@
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="https://unpkg.com/textalive-app-api/dist/index.js"></script>
-<script>
-  const { Player } = TextAliveApp;
-</script>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle"></title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <div class="logo-mark"></div>
+
+        <div>
+            <h2 id="companyName"></h2>
+            <small id="president"></small>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#service">SERVICE</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <div class="hero-icon"></div>
+
+        <h1 id="heroTitle"></h1>
+
+        <p id="heroText"></p>
+
+        <a href="#contact" class="btn">
+            お問い合わせ
+        </a>
+    </div>
+
+</section>
+
+<section class="service-section" id="service">
+
+    <h2>
+        事業内容
+    </h2>
+
+    <div class="cards" id="serviceCards"></div>
+
+</section>
+
+<section class="about-section" id="about">
+
+    <div class="about-box">
+
+        <h2 id="aboutTitle"></h2>
+
+        <p id="aboutText"></p>
+
+    </div>
+
+</section>
+
+<section class="contact-section" id="contact">
+
+    <h2>CONTACT</h2>
+
+    <p id="contactText"></p>
+
+    <a class="btn" href="#">
+        お問い合わせ
+    </a>
+
+</section>
+
+<footer>
+
+    © 2026
+    <span id="footerCompany"></span>
+
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
