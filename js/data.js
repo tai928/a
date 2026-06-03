@@ -11,7 +11,6 @@ const SITE_DATA = {
 
     heroText:
         "感覚ではなく、圧倒的ロジックを。",
-        "一過性の利益ではなく、世代を超える資産形成を",
 
     aboutTitle:
         "企業理念",
